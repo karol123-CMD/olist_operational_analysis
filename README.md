@@ -40,9 +40,9 @@ Este projeto consolidou minha capacidade de atuar no ciclo completo de um projet
 
 ###  Sobre a Autora
 **Karol Antunes Silva**
-Sou Analista de Dados focada em converter desafios operacionais em **vantagem competitiva**. Acredito que a tecnologia deve trabalhar junto ao negócio, e meu trabalho é ser a parte da operação, atuando como uma ponte que transforma grandes volumes de dados, muitas vezes bagunçados, em informações, trabalhando em **insights acionáveis**.
+Sou estudante de Bacharelado em Sistemas de Informação, atualmente no 4º semestre, e estagiária em Análise de Dados.
 
- **[Acesse meu LinkedIn: www.linkedin.com/in/karol-antunes-2b9236390 ]** | **[Entre em contato por e-mail: karolantunes1412@gmail.com]**
+[LinkedIn](https://www.linkedin.com/in/karol-antunes-silva-2b9236390/) | [Contato por e-mail](mailto:karolantunes1412@gmail.com)
 
 ---
 *Este repositório é um exemplo prático de como utilizo **Business Intelligence** para gerar valor real em cenários complexos de mercado.*
