@@ -39,15 +39,15 @@ Os materiais apresentam alguns indicadores com critérios e arredondamentos dife
 
 ## Explore os materiais
 
-A planilha tem aproximadamente **85 MB**; baixe o arquivo para abri-lo no Excel. Os documentos complementares estão em Word (`.docx`), então precisam ser baixados para leitura.
+A planilha tem aproximadamente **85 MB**; baixe o arquivo para abri-lo no Excel. Os documentos complementares estão disponíveis em Markdown para leitura direta no GitHub; os arquivos Word originais também foram mantidos.
 
 | Material | O que você encontra |
 |---|---|
 | [Planilha e dashboard](02_planilhas/analise_operacional_pedidos_entregas_sla.xlsx) | Arquivo principal da análise operacional. |
 | [Prévia do dashboard](03_dashboard/dashboard.jpg) | Captura do painel com indicadores e gráficos. |
-| [Relatório executivo](<04_relatorio_executivo/Relatório Executivo_ Olist E-Commerce.docx>) | Contexto, indicadores, interpretações e recomendações do estudo. |
-| [Dicionário de dados](05_documentacao_tecnica/Dicionario_de_Dados_Olist.docx) | Descrição das tabelas, campos, camadas e relacionamentos documentados. |
-| [Fórmulas e KPIs](05_documentacao_tecnica/Formulas_KPIs.docx) | Definições e fórmulas dos indicadores descritos no projeto. |
+| [Relatório executivo (Markdown)](04_relatorio_executivo/relatorio_executivo.md) · [Word original](<04_relatorio_executivo/Relatório Executivo_ Olist E-Commerce.docx>) | Contexto, indicadores, interpretações e recomendações do estudo. |
+| [Dicionário de dados (Markdown)](05_documentacao_tecnica/dicionario_de_dados.md) · [Word original](05_documentacao_tecnica/Dicionario_de_Dados_Olist.docx) | Descrição das tabelas, campos, camadas e relacionamentos documentados. |
+| [Fórmulas e KPIs (Markdown)](05_documentacao_tecnica/formulas_kpis.md) · [Word original](05_documentacao_tecnica/Formulas_KPIs.docx) | Definições e fórmulas dos indicadores descritos no projeto. |
 
 ## Estrutura do repositório
 
