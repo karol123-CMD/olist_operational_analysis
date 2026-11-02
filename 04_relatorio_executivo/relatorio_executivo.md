@@ -1,4 +1,4 @@
-> Cópia em Markdown para leitura no GitHub, convertida de [Relatório Executivo_ Olist E-Commerce.docx](<Relatório Executivo_ Olist E-Commerce.docx>). O Word original foi preservado; o texto e os valores foram transcritos, sem revisão ou reconciliação nesta etapa.
+> Cópia em Markdown para leitura no GitHub, convertida de [relatorio_executivo_olist_e_commerce.docx](originais/relatorio_executivo_olist_e_commerce.docx). O Word original foi preservado; o texto e os valores foram transcritos, sem revisão ou reconciliação nesta etapa.
 
 # RELATÓRIO EXECUTIVO: Análise Operacional de Pedidos e Entregas SLA
 

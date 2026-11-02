@@ -1,4 +1,4 @@
-> Cópia em Markdown para leitura no GitHub, convertida de [Formulas_KPIs.docx](<Formulas_KPIs.docx>). O Word original foi preservado; o texto e os valores foram transcritos, sem revisão ou reconciliação nesta etapa.
+> Cópia em Markdown para leitura no GitHub, convertida de [formulas_kpis.docx](originais/formulas_kpis.docx). O Word original foi preservado; o texto e os valores foram transcritos, sem revisão ou reconciliação nesta etapa.
 
 # DOCUMENTAÇÃO TÉCNICA E ANALÍTICA
 

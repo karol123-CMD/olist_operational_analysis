@@ -1,4 +1,4 @@
-> Cópia em Markdown para leitura no GitHub, convertida de [Dicionario_de_Dados_Olist.docx](<Dicionario_de_Dados_Olist.docx>). O Word original foi preservado; o texto e os valores foram transcritos, sem revisão ou reconciliação nesta etapa.
+> Cópia em Markdown para leitura no GitHub, convertida de [dicionario_de_dados_olist.docx](originais/dicionario_de_dados_olist.docx). O Word original foi preservado; o texto e os valores foram transcritos, sem revisão ou reconciliação nesta etapa.
 
 # DOCUMENTAÇÃO TÉCNICA E ANALÍTICA
 

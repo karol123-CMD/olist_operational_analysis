@@ -45,17 +45,17 @@ A planilha tem aproximadamente **85 MB**; baixe o arquivo para abri-lo no Excel.
 |---|---|
 | [Planilha e dashboard](02_planilhas/analise_operacional_pedidos_entregas_sla.xlsx) | Arquivo principal da análise operacional. |
 | [Prévia do dashboard](03_dashboard/dashboard.jpg) | Captura do painel com indicadores e gráficos. |
-| [Relatório executivo (Markdown)](04_relatorio_executivo/relatorio_executivo.md) · [Word original](<04_relatorio_executivo/Relatório Executivo_ Olist E-Commerce.docx>) | Contexto, indicadores, interpretações e recomendações do estudo. |
-| [Dicionário de dados (Markdown)](05_documentacao_tecnica/dicionario_de_dados.md) · [Word original](05_documentacao_tecnica/Dicionario_de_Dados_Olist.docx) | Descrição das tabelas, campos, camadas e relacionamentos documentados. |
-| [Fórmulas e KPIs (Markdown)](05_documentacao_tecnica/formulas_kpis.md) · [Word original](05_documentacao_tecnica/Formulas_KPIs.docx) | Definições e fórmulas dos indicadores descritos no projeto. |
+| [Relatório executivo (Markdown)](04_relatorio_executivo/relatorio_executivo.md) · [índice da pasta](04_relatorio_executivo/README.md) · [Word original](04_relatorio_executivo/originais/relatorio_executivo_olist_e_commerce.docx) | Contexto, indicadores, interpretações e recomendações do estudo. |
+| [Dicionário de dados (Markdown)](05_documentacao_tecnica/dicionario_de_dados.md) · [índice técnico](05_documentacao_tecnica/README.md) · [Word original](05_documentacao_tecnica/originais/dicionario_de_dados_olist.docx) | Descrição das tabelas, campos, camadas e relacionamentos documentados. |
+| [Fórmulas e KPIs (Markdown)](05_documentacao_tecnica/formulas_kpis.md) · [Word original](05_documentacao_tecnica/originais/formulas_kpis.docx) | Definições e fórmulas dos indicadores descritos no projeto. |
 
 ## Estrutura do repositório
 
 - `01_base_dados/` — arquivos CSV do dataset.
 - `02_planilhas/` — planilha de análise em Excel.
 - `03_dashboard/` — captura do dashboard.
-- `04_relatorio_executivo/` — relatório complementar.
-- `05_documentacao_tecnica/` — dicionário de dados e documentação de KPIs.
+- `04_relatorio_executivo/` — índice da pasta, relatório em Markdown e DOCX original em `originais/`.
+- `05_documentacao_tecnica/` — índice, dicionário e fórmulas em Markdown; DOCX originais em `originais/`.
 
 ## Sobre a autora
 
