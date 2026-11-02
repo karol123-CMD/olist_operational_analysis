@@ -1,48 +1,64 @@
-# Otimização de Performance no E-commerce: Inteligência Logística e Experiência do Cliente
+# Análise operacional de pedidos e entregas na Olist
 
-Como analista, entendo que dados isolados são apenas registros; o valor real surge quando conseguimos transformá-los em **direcionamento estratégico**. Neste projeto, mergulhei em uma base de quase **100 mil pedidos** da Olist para diagnosticar como a engrenagem logística impacta diretamente a **saúde financeira** e a percepção de marca no e-commerce. O foco aqui não foi apenas descrever o que aconteceu, mas sim identificar onde a operação "vaza" receita e como podemos estancar essa perda através de **decisões baseadas em dados**.
+Estudo exploratório da operação logística do marketplace Olist com o *Brazilian E-Commerce Public Dataset*. O fluxo documentado usa Power Query para preparar e consolidar os dados e Excel para organizar indicadores, tabelas dinâmicas e um dashboard gerencial.
 
-# Indicadores de Performance (KPIs Analisados)
-Para medir a eficiência da operação e o sucesso do cliente, estruturei e acompanhei as seguintes métricas fundamentais:
+![Prévia do dashboard de pedidos, entregas e SLA](03_dashboard/dashboard.jpg)
 
-* **GMV (Volume Transacionado):** R$ 15,84 Milhões — Visão clara da escala financeira movimentada.
-* **Volume Operacional:** 99.441 pedidos processados.
-* **Taxa de Sucesso Logístico:** 97% de entregas concluídas, monitorando de perto o risco dos 3% residuais.
-* **Nível de Serviço (SLA):** 93,2% de cumprimento do prazo — métrica vital para a **confiança do consumidor**.
-* **Lead Time Médio:** 12,5 dias entre o checkout e a porta do cliente.
-* **Ticket Médio:** R$ 159,82 — base para análise de rentabilidade por pedido.
-* **Custo de Frete Médio:** R$ 22,90 — identificado como um dos principais **ofensores de conversão** em regiões específicas.
-* **Satisfação (NPS/Score):** Média de 4,09/5, com foco investigativo nos **14,7% de detratores**.
+[Ver a imagem em tamanho original](03_dashboard/dashboard.jpg)
 
-##  Insights e Visão de Negócio
-A análise revelou que o crescimento acelerado (135% de aumento de volume em um ano) testou os limites da operação.
+## O projeto em 30 segundos
 
-1.  **A Correlação Crítica:** Identifiquei que atrasos superiores a 8 dias são o gatilho principal para a queda drástica na satisfação. Atuar na **logística preventiva** é, portanto, uma estratégia de **retenção e redução de churn**.
-2.  **Oportunidade Geográfica:** Enxerguei uma disparidade regional onde estados do Norte e Nordeste apresentam alto Ticket Médio, mas são penalizados pelo custo de frete. Há um mercado potencial represado por barreiras logísticas.
-3.  **Fidelização via Operação:** Dados comprovam que a promessa de entrega (SLA) é mais importante para a nota do cliente do que o tempo de entrega em si. Gerenciar a expectativa é a chave para o **sucesso do cliente (CX)**.
+A análise cobre **99.441 pedidos**, de setembro de 2016 a agosto de 2018. O foco é acompanhar o volume de pedidos, o cumprimento do prazo de entrega, o tempo de entrega, o frete, a distribuição geográfica e as avaliações dos clientes. A entrega principal é uma planilha Excel com dashboard, acompanhada de relatório executivo e documentação técnica.
 
-## Tecnologias e Ferramentas Utilizadas
-Stack focada em rápida prototipação, robustez no tratamento e comunicação executiva:
+## Pergunta de negócio
 
-* **ETL & Engenharia de Dados:** Power Query (Extração, limpeza, tratamento de valores nulos e estruturação de dados relacionais 1:N para evitar duplicidade de receita).
-* **Análise Exploratória & Modelagem:** Microsoft Excel Avançado (Fórmulas complexas, Tabelas Dinâmicas, modelagem de base tratada).
-* **Análise Quantitativa:** Estatística Descritiva (Uso de medianas, desvio padrão e quartis para evitar análises enviesadas por outliers).
-* **Visualização & Reporte:** Dashboards Gerenciais, Criação de KPIs Operacionais e Data Storytelling focado em C-Level.
+Como a operação de pedidos e entregas se comportou nesse período, e quais recortes ajudam a investigar atrasos e a experiência registrada pelos clientes? O projeto organiza esses indicadores para apoiar uma leitura operacional da amostra — não para avaliar a operação atual da Olist.
 
-## Competências e Aprendizados Extraídos
-Este projeto consolidou minha capacidade de atuar no ciclo completo de um projeto de dados:
+## Dados e ferramentas
 
-* **Pensamento Analítico:** Fui além do óbvio, buscando as causas raiz por trás dos atrasos e da insatisfação.
-* **Integridade de Dados:** Rigor técnico na agregação de bases complexas para garantir que as métricas financeiras fossem 100% confiáveis.
-* **Comunicação Executiva:** Traduzi a complexidade estatística para uma linguagem que faz sentido para o **Board Diretor**, focando no que realmente traz **ROI** e eficiência.
+A fonte indicada nos materiais é o **Brazilian E-Commerce Public Dataset by Olist**, distribuído pelo Kaggle. Os arquivos CSV estão em [`01_base_dados/`](01_base_dados/). O conjunto cobre pedidos, itens, pagamentos, avaliações, clientes, produtos, vendedores, geolocalização e tradução de categorias.
 
----
+- **Power Query:** preparação e consolidação das tabelas.
+- **Microsoft Excel:** fórmulas, base tratada, tabelas dinâmicas e dashboard.
+- **Análise descritiva:** acompanhamento de indicadores operacionais e recortes por período e localização.
 
-###  Sobre a Autora
-**Karol Antunes Silva**
-Sou estudante de Bacharelado em Sistemas de Informação, atualmente no 4º semestre, e estagiária em Análise de Dados.
+O fluxo descrito na documentação é, em linhas gerais: **CSV → Power Query → base tratada por pedido → indicadores e tabelas dinâmicas → dashboard**. A agregação de itens e pagamentos antes da consolidação é documentada como forma de respeitar a granularidade dessas tabelas.
 
-[LinkedIn](https://www.linkedin.com/in/karol-antunes-silva-2b9236390/) | [Contato por e-mail](mailto:karolantunes1412@gmail.com)
+## Leituras apresentadas
 
----
-*Este repositório é um exemplo prático de como utilizo **Business Intelligence** para gerar valor real em cenários complexos de mercado.*
+O relatório organiza análises temporais e regionais de pedidos, atrasos, frete e avaliações. Os padrões são descritivos: a coincidência entre dois comportamentos na amostra não demonstra que um causou o outro. Recomendações e estimativas de cenário apresentadas no relatório devem ser lidas como hipóteses para investigação, não como efeitos de intervenções testadas.
+
+Os materiais apresentam alguns indicadores com critérios e arredondamentos diferentes. Para evitar uma síntese numérica ambígua, este README não replica esses percentuais nem valores financeiros. A planilha e o relatório continuam disponíveis para consulta; a reconciliação dos indicadores deve preceder qualquer divulgação de um número único.
+
+## Limites da análise
+
+- Os dados são históricos e cobrem setembro de 2016 a agosto de 2018; não representam a operação atual.
+- A análise é exploratória e descritiva. Não estima causalidade nem testa o efeito de ações operacionais.
+- Os registros disponíveis não identificam, por si só, a causa de cada pedido sem entrega registrada.
+- As recomendações do relatório são pontos de investigação, não decisões já validadas pela Olist.
+
+## Explore os materiais
+
+A planilha tem aproximadamente **85 MB**; baixe o arquivo para abri-lo no Excel. Os documentos complementares estão disponíveis em Markdown para leitura direta no GitHub; os arquivos Word originais também foram mantidos.
+
+| Material | O que você encontra |
+|---|---|
+| [Planilha e dashboard](02_planilhas/analise_operacional_pedidos_entregas_sla.xlsx) | Arquivo principal da análise operacional. |
+| [Prévia do dashboard](03_dashboard/dashboard.jpg) | Captura do painel com indicadores e gráficos. |
+| [Relatório executivo (Markdown)](04_relatorio_executivo/relatorio_executivo.md) · [índice da pasta](04_relatorio_executivo/README.md) · [Word original](04_relatorio_executivo/originais/relatorio_executivo_olist_e_commerce.docx) | Contexto, indicadores, interpretações e recomendações do estudo. |
+| [Dicionário de dados (Markdown)](05_documentacao_tecnica/dicionario_de_dados.md) · [índice técnico](05_documentacao_tecnica/README.md) · [Word original](05_documentacao_tecnica/originais/dicionario_de_dados_olist.docx) | Descrição das tabelas, campos, camadas e relacionamentos documentados. |
+| [Fórmulas e KPIs (Markdown)](05_documentacao_tecnica/formulas_kpis.md) · [Word original](05_documentacao_tecnica/originais/formulas_kpis.docx) | Definições e fórmulas dos indicadores descritos no projeto. |
+
+## Estrutura do repositório
+
+- `01_base_dados/` — arquivos CSV do dataset.
+- `02_planilhas/` — planilha de análise em Excel.
+- `03_dashboard/` — captura do dashboard.
+- `04_relatorio_executivo/` — índice da pasta, relatório em Markdown e DOCX original em `originais/`.
+- `05_documentacao_tecnica/` — índice, dicionário e fórmulas em Markdown; DOCX originais em `originais/`.
+
+## Sobre a autora
+
+**Karol Antunes Silva** — estudante de Sistemas de Informação e estagiária em Análise de Dados.
+
+[LinkedIn](https://www.linkedin.com/in/karol-antunes-silva-2b9236390/) · [Contato por e-mail](mailto:karolantunes1412@gmail.com)
