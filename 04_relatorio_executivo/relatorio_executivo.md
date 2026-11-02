@@ -30,11 +30,11 @@ Taxa de entrega de 97%, apenas 3% dos pedidos ficaram sem entrega registrada
 
 Avaliação média de 4,09 / 5, com 57,8% dos clientes atribuindo nota máxima
 
-Cartão de crédito responde por 75,8% das transações, indicando maturidade digital da base de clientes
+Cartão de crédito aparece como forma principal em 75,8% dos pedidos listados
 
 **Pontos de Atenção**
 
-6.534 pedidos entregues com atraso, 43,8% desses com atraso superior a 8 dias
+6.534 pedidos entregues com atraso, 43,8% desses com atraso de 8 dias ou mais, conforme as faixas de 8–15 dias e acima de 15 dias
 
 Frete representa 14,2% do GMV; estados do Norte e Nordeste pagam até 3x mais que SP
 
@@ -67,17 +67,17 @@ Os dados abrangem 24 meses de operação (set/2016 a ago/2018), período que inc
 <tr><td>Taxa de Atraso</td><td>6,77% (6.534 pedidos atrasados)</td><td>Avaliação Média</td><td>4,09/5 (57,8% nota máxima)</td></tr>
 </table>
 
-O ticket médio de R$ 159,83 foi calculado exclusivamente sobre os 96.470 pedidos com entrega confirmada, excluindo pedidos cancelados, não entregues e os 8 registros classificados como inconsistentes (status "entregue" sem data de entrega registrada). A base apresenta 965 pedidos acima do percentil 99 (valor ≥ R$ 1.052,40), com o maior pedido registrado em R$ 13.664,08. A manutenção desses valores na análise eleva o ticket médio em R$ 15,18 em relação à média sem outliers (R$ 144,65). Optou-se por preservá-los, pois representam transações legítimas de alto valor; contudo, análises de comportamento típico do consumidor devem considerar a mediana (R$ 104,56) como métrica mais representativa. O GMV reportado (R$ 15,8M) difere da soma de pagamentos registrados (R$ 16,0M); a diferença de R$ 165K requer investigação adicional na camada de pagamentos parcelados e eventuais juros capturados pelo sistema, não podendo ser atribuída exclusivamente ao uso de vouchers sem confirmação nos dados de origem.
+O ticket médio de R$ 159,83 foi calculado exclusivamente sobre os 96.470 pedidos com entrega confirmada, excluindo pedidos cancelados, não entregues e os 8 registros classificados como inconsistentes (status "entregue" sem data de entrega registrada). A base apresenta 965 pedidos acima do percentil 99 (valor ≥ R$ 1.052,40), com o maior pedido registrado em R$ 13.664,08. A manutenção desses valores na análise eleva o ticket médio em R$ 15,18 em relação à média sem outliers (R$ 144,65). Optou-se por preservá-los, pois representam transações legítimas de alto valor; contudo, análises de comportamento típico do consumidor devem considerar a mediana (R$ 104,56) como métrica mais representativa. O GMV reportado (R$ 15,8M) difere da soma dos pagamentos registrados (R$ 16,0M) em R$ 165.318,88. A diferença permanece sem reconciliação nesta análise; os dados consultados não permitem apontar sua causa.
 
 **Interpretação dos KPIs**
 
-GMV de R$ 15,8 milhões: representa o total movimentado pela plataforma, incluindo produtos (85,8%) e frete (14,2%). Este é o principal indicador de escala do negócio. A receita efetivamente transacionada via pagamentos soma R$ 16,0 milhões, diferença justificada pelo uso de vouchers e créditos pelos clientes, o que indica um programa de fidelização ativo.
+GMV de R$ 15,8 milhões: representa o total movimentado pela plataforma, incluindo produtos (85,8%) e frete (14,2%). Este é o principal indicador de escala do negócio. A soma dos valores registrados em pagamentos é de R$ 16,0 milhões e excede o GMV em R$ 165.318,88. A origem da diferença não foi confirmada neste levantamento; portanto, ela não é atribuída a vouchers, créditos ou juros.
 
 Ticket médio de R$ 159,83: calculado sobre os 96.470 pedidos efetivamente entregues, o valor indica compras de médio porte. Há uma assimetria expressiva: a mediana do ticket é R$ 104,56, bem abaixo da média, sinalizando que pedidos de alto valor puxam a média para cima, enquanto a maioria dos clientes realiza compras menores.
 
 Taxa de entrega de 97%: dos 99.441 pedidos, 96.470 foram entregues. Os 2.963 não entregues (3%) merecem investigação: podem representar cancelamentos pós-pagamento, falhas na transportadora ou fraudes. Embora 3% pareça baixo, em escala representa potencial impacto financeiro e de reputação relevante.
 
-SLA de 93,2%: a cada 100 pedidos entregues, aproximadamente 7 chegam com atraso. O número absoluto de 6.534 pedidos atrasados, combinado com a severidade,  43,8% desses com atraso superior a 8 dias, revela que o problema não é apenas frequência, mas também profundidade dos atrasos.
+SLA de 93,2%: a cada 100 pedidos entregues, aproximadamente 7 chegam com atraso. O número absoluto de 6.534 pedidos atrasados, combinado com a severidade,  43,8% desses com atraso de 8 dias ou mais, conforme as faixas de 8–15 dias e acima de 15 dias, revela que o problema não é apenas frequência, mas também profundidade dos atrasos.
 
 **4. Principais Insights**
 
@@ -131,14 +131,16 @@ Clientes do Norte e Nordeste pagam até 3 vezes mais frete que clientes de São 
 **4.5 Domínio do Cartão de Crédito e Dependência de um Canal**
 
 <table>
-<tr><td>Forma de Pagamento</td><td>Pedidos</td><td>Volume (R$)</td></tr>
+<tr><td>Forma principal de pagamento</td><td>Pedidos</td><td>GMV por forma principal (R$)</td></tr>
 <tr><td>Cartão de Crédito</td><td>75.387 (75,8%)</td><td>R$ 12.452.802,61 (78,6%)</td></tr>
 <tr><td>Boleto Bancário</td><td>19.784 (19,9%)</td><td>R$ 2.842.240,29 (17,9%)</td></tr>
 <tr><td>Voucher/Crédito</td><td>2.739 (2,8%)</td><td>R$ 333.259,16 (2,1%)</td></tr>
 <tr><td>Cartão de Débito</td><td>1.527 (1,5%)</td><td>R$ 215.107,72 (1,4%)</td></tr>
 </table>
 
-O cartão de crédito responde por 78,6% do volume financeiro transacionado. Essa dominância é positiva (maior capacidade de compra, parcelamento) mas representa um risco de concentração de canal: qualquer instabilidade em adquirentes ou bandeiras teria impacto imediato e severo na operação. O boleto, com quase 20% dos pedidos, mantém relevância, especialmente para públicos sem acesso a crédito ou que preferem pagamento à vista.
+Conforme a definição adotada nesta revisão, o quadro apresenta o GMV distribuído pela forma principal de pagamento. As categorias exibidas somam R$ 15.843.409,78, R$ 143,46 abaixo do GMV total de R$ 15.843.553,24 registrado em `base_tratada`. A diferença permanece sem reconciliação, e a regra exata da agregação não foi revalidada neste passo; portanto, não atribuo o residual a vouchers, créditos ou outra causa sem evidência.
+
+O cartão de crédito concentra 78,6% do GMV distribuído entre as formas principais listadas no quadro. Essa dominância é positiva (maior capacidade de compra, parcelamento) mas representa um risco de concentração de canal: qualquer instabilidade em adquirentes ou bandeiras teria impacto imediato e severo na operação. O boleto, com quase 20% dos pedidos, mantém relevância, especialmente para públicos sem acesso a crédito ou que preferem pagamento à vista.
 
 **4.6 A Raiz da Insatisfação Não é Onde Parece**
 
@@ -157,7 +159,7 @@ A relevância desse gap é direta: se os 19% de taxa de atraso de março de 2018
 **5. Pontos de Atenção**
 
 <table>
-<tr><td>Risco Operacional — Atrasos com Alta Gravidade</td><td>6.534 pedidos entregues com atraso, sendo 2.862 com atraso superior a 8 dias. Em operações de e-commerce, atrasos acima de uma semana além do prometido têm correlação direta com churn de clientes e notas baixas. A distribuição uniforme entre as faixas de atraso indica ausência de um padrão sazonais,  o problema ocorre durante todo o ano.</td></tr>
+<tr><td>Risco Operacional — Atrasos com Alta Gravidade</td><td>6.534 pedidos entregues com atraso, sendo 2.862 com atraso de 8 dias ou mais, conforme as faixas de 8–15 dias e acima de 15 dias. Em operações de e-commerce, atrasos acima de uma semana além do prometido têm correlação direta com churn de clientes e notas baixas. A distribuição uniforme entre as faixas de atraso indica ausência de um padrão sazonais,  o problema ocorre durante todo o ano.</td></tr>
 <tr><td>Risco de Experiência — 14,7% de Clientes Insatisfeitos</td><td>14.575 avaliações com notas 1 ou 2 representam quase 1 em cada 7 clientes expressando insatisfação. Em uma plataforma marketplace, a reputação é ativo central. Clientes insatisfeitos tendem a não retornar, aumentam o custo de aquisição (CAC) para repor a base e podem gerar impacto negativo em canais digitais (redes sociais, reviews públicos).</td></tr>
 <tr><td>Risco Financeiro - Frete Elevado no Norte e Nordeste</td><td>O custo de frete em estados como Paraíba e Roraima supera R$ 48,00 por pedido, 182% acima da média de São Paulo. Isso pode estar suprimindo o volume de pedidos nessas regiões e reduzindo a conversão de visitantes em compradores. A análise indica que, mesmo assim, o ticket médio nessas regiões é significativamente mais alto, o que valida o potencial latente desse mercado.</td></tr>
 <tr><td>Limitação dos Dados - 2.963 Pedidos Não Entregues</td><td>A base não permite identificar com precisão a causa dos pedidos sem entrega registrada. Podem representar cancelamentos por inadimplência, devoluções, falhas de transportadora ou pedidos fraudulentos. Sem essa classificação, é impossível saber se são pedidos recuperáveis ou perdas definitivas, o que impede uma resposta estratégica adequada.</td></tr>
@@ -205,7 +207,7 @@ A migração para uma ferramenta de BI interativa (Power BI ou Tableau) é recom
 
 **7. Conclusão Executiva**
 
-A Olist opera em crescimento real e acelerado: mais de 100 mil pedidos em 24 meses, crescimento de 135% no volume e taxa de entrega de 97%. Esses números validam o modelo de negócio. O problema não está na escala, está no que a escala revela.
+A Olist opera em crescimento real e acelerado: quase 100 mil pedidos em 24 meses, crescimento de 135% no volume e taxa de entrega de 97%. Esses números validam o modelo de negócio. O problema não está na escala, está no que a escala revela.
 
 Dois diagnósticos emergem desta análise e devem orientar a agenda executiva dos próximos 12 meses:
 
